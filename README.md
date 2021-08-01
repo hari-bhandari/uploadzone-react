@@ -3,14 +3,14 @@
 ## Installation
 
 ```bash
-npm install --save react-images-upload
+npm install --save photo-upload-component
 ```
 
 ## Usage
 ### Using Classes
 ```javascript
 import React from "react";
-import ImageUploader from "react-images-upload";
+import ImageUploader from "photo-upload-component";
 
 class App extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class App extends React.Component {
 ### Using Hooks
 ```javascript
 import React, { useState } from "react";
-import ImageUploader from "react-images-upload";
+import ImageUploader from "photo-upload-component";
 
 const App = props => {
   const [pictures, setPictures] = useState([]);

@@ -1,6 +1,5 @@
 # Images uploader UI component
-This is a fork of [react-images-upload](https://github.com/JakeHartnell/react-images-upload).
-We added the *maxFiles* prop to limit the amount of uploaded images.
+
 
 Simple component for upload and validate (client side) images with preview built with React.js.
 This package use [react-flip-move](https://github.com/joshwcomeau/react-flip-move) for animate the file preview images.
@@ -8,14 +7,14 @@ This package use [react-flip-move](https://github.com/joshwcomeau/react-flip-mov
 ## Installation
 
 ```bash
-npm install --save react-images-upload
+npm install --save photo-upload-component
 ```
 
 ## Usage
 
 ```javascript
 import React from 'react';
-import ImageUploader from '@geraudwilling/react-images-upload';
+import ImageUploader from 'photo-upload-component';
 
 class App extends React.Component {
 
