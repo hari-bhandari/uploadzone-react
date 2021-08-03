@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
-import FlipMove from 'react-flip-move';
 const styles = {
   display: "flex",
   alignItems: "center",
@@ -158,9 +157,7 @@ const ReactImageUploadComponent = ({className, defaultImages,
   const renderPreview=()=> {
     return (
         <div className="uploadPicturesWrapper">
-          <FlipMove enterAnimation="fade" leaveAnimation="fade" style={styles}>
             {renderPreviewPictures()}
-          </FlipMove>
         </div>
     );
   }
