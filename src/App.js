@@ -28,7 +28,7 @@ class App extends React.Component {
                 withIcon={true}
                 buttonText='Choose images'
                 onChange={this.onDrop}
-                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                imgExtension={['.jpg', '.gif', '.gif']}
                 maxFiles={4}
                 maxFileSize={5242880}
             />

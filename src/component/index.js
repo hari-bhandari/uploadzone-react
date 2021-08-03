@@ -30,12 +30,14 @@ const ReactImageUploadComponent = ({className, defaultImages,
   }, [files]);
   const hasExtension=(fileName)=> {
     const ext='.'+fileName.slice((fileName.lastIndexOf(".") - 1 >>> 0) + 2)
+    let isTrue=false
     imgExtension.forEach((extension)=>{
-      if(ext===extension){
-        return true
+      console.log(extension)
+      if(ext.toLowerCase()===extension){
+        isTrue=true
       }
     })
-    return false
+    return isTrue
 
   }
 
@@ -54,7 +56,7 @@ const ReactImageUploadComponent = ({className, defaultImages,
         name: file.name,
       };
       // Check for file extension
-      if (hasExtension(file.name)) {
+      if (!hasExtension(file.name)) {
         fileError = Object.assign(fileError, {
           type: ERROR.NOT_SUPPORTED_EXTENSION
         });
